@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string str;
+    cin>>str;
+
+    map<int,string>maps = {
+        {2,"abc"},
+        {3,"def"},
+        {4,""}
+    }
+}

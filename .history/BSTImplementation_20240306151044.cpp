@@ -1,0 +1,16 @@
+#include<bits./stdc++.h>
+using namespace std;
+
+class Node{
+    public:
+    int val;
+    Node*left,*right;
+
+    Node(int data){
+        val = da
+    }
+}
+int main() {
+    int arr[8] = {1,2,4,5,6,7,8,9};
+    Node*root = NULL;
+}
