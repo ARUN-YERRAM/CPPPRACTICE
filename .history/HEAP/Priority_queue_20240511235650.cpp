@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     priority_queue<int,vector<int>,greater<int>>pq;
-    // priority_queue<int>pqq;
+    priority_queue<int>pqq;
     pq.push(10);
     pq.push(20);
     pq.push(30);
