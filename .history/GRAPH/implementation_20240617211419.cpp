@@ -57,6 +57,4 @@ int main(){
 // root
 // loop 
 // parent is one node
-// individual nodes are graph bu not tree
-
-
+// individual 

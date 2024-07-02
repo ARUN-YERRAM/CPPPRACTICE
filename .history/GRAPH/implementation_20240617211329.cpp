@@ -55,8 +55,4 @@ int main(){
 
 // n nodes n-1 edges.
 // root
-// loop 
-// parent is one node
-// individual nodes are graph bu not tree
-
-
+// 

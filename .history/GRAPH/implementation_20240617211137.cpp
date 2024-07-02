@@ -50,13 +50,6 @@ int main(){
 }
 
 
-// TC : (V**2)
+// TC : (v**2)
 // SC : (V+E)
-
-// n nodes n-1 edges.
-// root
-// loop 
-// parent is one node
-// individual nodes are graph bu not tree
-
 
