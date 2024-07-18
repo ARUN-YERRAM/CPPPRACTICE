@@ -68,6 +68,7 @@ int main() {
                     ans[ind++] = i;
                     for (y = 0; y < m; y++)
                         avail[y] += alloc[i][y];
+                    }
                     f[i] = 1;
                 }
             }
