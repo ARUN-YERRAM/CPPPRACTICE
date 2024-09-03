@@ -158,11 +158,11 @@ int main(){
         // cin>>n;
         vector<int>arr = {3,5,2,4,1};
 
-        // selection(arr,n);
-        // bubble(arr,n);
-        // Insertion(arr,n);
-        // Merge_sort(arr,0,n);
-        // Quick_sort(arr,0,n);
+        selection(arr,n);
+        bubble(arr,n);
+        Insertion(arr,n);
+        Merge_sort(arr,0,n);
+        Quick_sort(arr,0,n);
         Heap_sort(arr);
 
 

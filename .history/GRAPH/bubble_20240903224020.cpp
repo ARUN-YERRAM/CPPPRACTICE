@@ -110,9 +110,6 @@ void Quick_sort(vector<int>&arr,int l,int r){
         Quick_sort(arr, pi + 1, r);
     }
 }
-// Function to heapify a subtree rooted with node i which is an index in arr[].
-// n is the size of the heap.
-
 void heapify(vector<int>& arr, int n, int i) {
     int largest = i;        // Initialize largest as root
     int left = 2 * i + 1;   // left = 2*i + 1
@@ -136,7 +133,7 @@ void heapify(vector<int>& arr, int n, int i) {
 }
 
 // Main function to perform Heap Sort
-void Heap_sort(vector<int>& arr) {
+void heapSort(vector<int>& arr) {
     int n = arr.size();
 
     // Build heap (rearrange array)
@@ -158,12 +155,12 @@ int main(){
         // cin>>n;
         vector<int>arr = {3,5,2,4,1};
 
-        // selection(arr,n);
-        // bubble(arr,n);
-        // Insertion(arr,n);
-        // Merge_sort(arr,0,n);
-        // Quick_sort(arr,0,n);
-        Heap_sort(arr);
+        selection(arr,n);
+        bubble(arr,n);
+        Insertion(arr,n);
+        Merge_sort(arr,0,n);
+        Quick_sort(arr,0,n);
+        Heap_sort(arr,n);
 
 
         for(auto it:arr)cout<<it<<" ";
