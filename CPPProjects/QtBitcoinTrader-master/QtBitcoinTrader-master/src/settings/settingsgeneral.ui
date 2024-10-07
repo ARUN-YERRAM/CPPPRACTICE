@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsGeneral</class>
+ <widget class="QWidget" name="SettingsGeneral">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SettingsGeneral</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="languageGroupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="accessibleName">
+      <string>SETTINGS_LANGUAGE</string>
+     </property>
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="languageLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_LANGUAGE</string>
+        </property>
+        <property name="text">
+         <string>Language:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="languageComboBox"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="showTranslationButton">
+        <property name="accessibleName">
+         <string>TR00121</string>
+        </property>
+        <property name="text">
+         <string>Create translation</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="generalGroupBox">
+     <property name="accessibleName">
+      <string>SETTINGS_GENERAL</string>
+     </property>
+     <property name="title">
+      <string>General</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <item row="1" column="0">
+       <widget class="QLabel" name="confirmOpenOrderLabel">
+        <property name="accessibleName">
+         <string>CONFIRM_ORDER_CHECK</string>
+        </property>
+        <property name="text">
+         <string>Confirm open order:</string>
+        </property>
+        <property name="buddy">
+         <cstring>confirmOpenOrderCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="confirmOpenOrderCheckBox">
+        <property name="accessibleName">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="closeToTrayLabel">
+        <property name="accessibleName">
+         <string>CLOSE_TO_TRAY</string>
+        </property>
+        <property name="text">
+         <string>Close to tray:</string>
+        </property>
+        <property name="buddy">
+         <cstring>closeToTrayCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="closeToTrayCheckBox">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="accessibleName">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="optimizeInterfaceLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_OPTIMIZE</string>
+        </property>
+        <property name="text">
+         <string>Reducing interface elements spacing (after restart):</string>
+        </property>
+        <property name="buddy">
+         <cstring>optimizeInterfaceCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="optimizeInterfaceCheckBox"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="hiDpiLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_HIDPI</string>
+        </property>
+        <property name="text">
+         <string>HiDPI (after restart):</string>
+        </property>
+        <property name="buddy">
+         <cstring>hiDpiCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="hiDpiCheckBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="useAltDomainYobitLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_USE_ALTERNATE_DOMAIN_FOR_YOBIT</string>
+        </property>
+        <property name="text">
+         <string>Use alternate domain for Yobit:</string>
+        </property>
+        <property name="buddy">
+         <cstring>useAltDomainYobitBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="useAltDomainYobitBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="updatesGroupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="accessibleName">
+      <string>SETTINGS_UPDATES</string>
+     </property>
+     <property name="title">
+      <string>Updates</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="checkForUpdatesLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_CHECK_UPDATES</string>
+        </property>
+        <property name="text">
+         <string>Check for updates at startup:</string>
+        </property>
+        <property name="buddy">
+         <cstring>checkForUpdatesCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkForUpdatesCheckBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="checkForUpdatesBetaLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_CHECK_UPDATES_BETA</string>
+        </property>
+        <property name="text">
+         <string>Check for beta updates at startup:</string>
+        </property>
+        <property name="buddy">
+         <cstring>checkForUpdatesBetaCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="checkForUpdatesBetaCheckBox"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="autoUpdateCheckBox"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="disablePairSyncLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_DISABLE_PAIR_SYNC</string>
+        </property>
+        <property name="text">
+         <string>Disable currency pair synchronization at startup:</string>
+        </property>
+        <property name="buddy">
+         <cstring>disablePairSyncCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="disablePairSyncCheckBox"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="autoUpdateLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_AUTO_UPDATE</string>
+        </property>
+        <property name="text">
+         <string>Auto update in background:</string>
+        </property>
+        <property name="buddy">
+         <cstring>autoUpdateCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="forceSyncPairsButton">
+        <property name="accessibleName">
+         <string>SETTINGS_FORCE_SYNC_PAIRS</string>
+        </property>
+        <property name="text">
+         <string>Force synchronize pairs after restart</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="timeGroupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="accessibleName">
+      <string>SETTINGS_TIME</string>
+     </property>
+     <property name="title">
+      <string>Time</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="use24HourTimeFormatLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_USE_24HOUR_TIME_FORMAT</string>
+        </property>
+        <property name="text">
+         <string>Use 24-hour time format:</string>
+        </property>
+        <property name="buddy">
+         <cstring>use24HourTimeFormatCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="timeSynchronizationLabel">
+        <property name="accessibleName">
+         <string>SETTINGS_TIME_SYNC</string>
+        </property>
+        <property name="text">
+         <string>Time synchronization:</string>
+        </property>
+        <property name="buddy">
+         <cstring>timeSynchronizationCheckBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="timeSynchronizationCheckBox"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="use24HourTimeFormatCheckBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="revertChangesButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="accessibleName">
+        <string>SETTINGS_REVERT_CHANGES</string>
+       </property>
+       <property name="text">
+        <string>Revert Changes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="restoreDefaultsButton">
+       <property name="accessibleName">
+        <string>SETTINGS_RESTORE_DEFAULTS</string>
+       </property>
+       <property name="text">
+        <string>Restore Defaults</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="accessibleName">
+        <string>SETTINGS_SAVE</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>languageComboBox</tabstop>
+  <tabstop>showTranslationButton</tabstop>
+  <tabstop>hiDpiCheckBox</tabstop>
+  <tabstop>confirmOpenOrderCheckBox</tabstop>
+  <tabstop>closeToTrayCheckBox</tabstop>
+  <tabstop>optimizeInterfaceCheckBox</tabstop>
+  <tabstop>useAltDomainYobitBox</tabstop>
+  <tabstop>checkForUpdatesCheckBox</tabstop>
+  <tabstop>checkForUpdatesBetaCheckBox</tabstop>
+  <tabstop>autoUpdateCheckBox</tabstop>
+  <tabstop>disablePairSyncCheckBox</tabstop>
+  <tabstop>forceSyncPairsButton</tabstop>
+  <tabstop>use24HourTimeFormatCheckBox</tabstop>
+  <tabstop>timeSynchronizationCheckBox</tabstop>
+  <tabstop>saveButton</tabstop>
+  <tabstop>revertChangesButton</tabstop>
+  <tabstop>restoreDefaultsButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>languageComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkForUpdatesCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>autoUpdateCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>confirmOpenOrderCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeToTrayCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkForUpdatesBetaCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>timeSynchronizationCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>use24HourTimeFormatCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>optimizeInterfaceCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>707</x>
+     <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hiDpiCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>disablePairSyncCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>useAltDomainYobitBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SettingsGeneral</receiver>
+   <slot>anyValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>553</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>anyValueChanged()</slot>
+ </slots>
+</ui>
