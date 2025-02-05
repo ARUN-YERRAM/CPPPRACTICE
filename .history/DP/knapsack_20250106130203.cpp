@@ -5,17 +5,17 @@ int Recrse(int wt[], int val[], int n, int W, vector<vector<int>>& t){
 
     if(n==0 || W==0) return 0;
 
-    // if(t[n][W]!=-1) return t[n][W];
+    if(t[n][W]!=-1) return t[n][W];
 
     if(wt[n-1]<=W){
-        return max(val[n-1]+Recrse(wt,val,n-1,W-wt[n-1],t),Recrse(wt,val,n-1,W,t));
+        return t[n][W]=max(val[n-1]+Recrse(wt,val,n-1,W-wt[n-1],t),Recrse(wt,val,n-1,W,t));
     }
     else{
-        return Recrse(wt,val,n-1,W,t);
+        return t[n][W]=Recrse(wt,val,n-1,W,t);
     }
 }
 // Top-down Memoization (Recursive)
-int RecrseMem(int wt[], int val[], int n, int W, vector<vector<int>>& t) {
+int Recrse(int wt[], int val[], int n, int W, vector<vector<int>>& t) {
     if (n == 0 || W == 0) return 0; // Base case: no items left or no capacity left
     
     if (t[n][W] != -1) return t[n][W]; // Return already computed value

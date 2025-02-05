@@ -15,11 +15,7 @@ int Recrse(int arr[], int tar, int i) {
 }
 
 int RecrseMem(int arr[],int tar ,int i,vector<vector<int>>&dp){
-    if(tar==0) return 1;
-    if(i==0) return 0;
-    if(dp[i][tar]!=-1) return dp[i][tar];
-    if(arr[i-1]<=tar) return dp[i][tar]=RecrseMem(arr,tar-arr[i-1],i-1,dp)+RecrseMem(arr,tar,i-1,dp);
-    else return dp[i][tar]=RecrseMem(arr,tar,i-1,dp);
+    
 }
 
 int RecrseDP(int arr[], int tar, int n) {
@@ -44,7 +40,7 @@ int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int n = 5;
     int tar = 6;
-    vector<vector<int>> dp(n+1,vector<int>(tar+1,-1));
+
     // Recursive version
     cout << "Number of ways (Recursive): " << Recrse(arr, tar, n) << endl;
 

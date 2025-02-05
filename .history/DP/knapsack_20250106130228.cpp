@@ -11,7 +11,7 @@ int Recrse(int wt[], int val[], int n, int W, vector<vector<int>>& t){
         return max(val[n-1]+Recrse(wt,val,n-1,W-wt[n-1],t),Recrse(wt,val,n-1,W,t));
     }
     else{
-        return Recrse(wt,val,n-1,W,t);
+        return t[n][W]=Recrse(wt,val,n-1,W,t);
     }
 }
 // Top-down Memoization (Recursive)

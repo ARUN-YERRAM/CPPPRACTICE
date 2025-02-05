@@ -12,7 +12,6 @@ int LCS_Recursive(string &s1, string &s2, int n, int m) {
         return max(LCS_Recursive(s1, s2, n - 1, m), LCS_Recursive(s1, s2, n, m - 1));
 }
 
-
 // Memoization function to find LCS (used to find LPS)
 int LCS_Memoization(string &s1, string &s2, int n, int m, vector<vector<int>> &dp) {
     if (n == 0 || m == 0)

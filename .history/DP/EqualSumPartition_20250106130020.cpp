@@ -12,17 +12,7 @@ bool Recrse(int arr[], int tot, int i) {
         return Recrse(arr, tot, i-1); // Exclude the current element if it's greater than total
 }
 
-bool RecseMem(int arr[], int tot, int i, vector<vector<bool>>& dp) {
-    if(tot == 0) return true;   // If the remaining total is 0
-    if(i == 0) return false;    // If no elements left and total is not 0
-    if(dp[i][tot]) return dp[i][tot]; // If we already computed this,
-    // then return the result
-
-    if(arr[i-1] <= tot) 
-        return dp[i][tot] = RecseMem(arr, tot-arr[i-1], i-1, dp) || RecseMem(arr, tot, i-1, dp); // Include or exclude
-    else 
-        return dp[i][tot] = RecseMem(arr, tot, i-1, dp); // Exclude the current element if it's greater than total
-}
+bool RecseMem()
 // DP tabulation solution
 bool RecrseDP(int arr[], int tot, int n) {
     vector<vector<bool>> dp(n+1, vector<bool>(tot+1, false));
