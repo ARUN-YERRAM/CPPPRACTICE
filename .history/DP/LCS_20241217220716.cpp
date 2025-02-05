@@ -21,9 +21,9 @@ int RecrseMem(string s1,string s2,int n,int m,vector<vector<int>>&dp){
 
     if(dp[n][m] != 0)return dp[n][m];
 
-    if(s1[n-1] == s2[m-1])
+    if(s1[n-1] == s2[m-1]){
         return dp[n][m] = 1 + RecrseMem(s1,s2,n-1,m-1,dp); 
-    
+    }
     else return dp[n][m] = max(RecrseMem(s1,s2,n-1,m,dp) , RecrseMem(s1,s2,n,m-1,dp));
 }
 
@@ -32,9 +32,9 @@ int Recrse(string s1,string s2,int n ,int m){
 
     // if(m == 0)return 0;
 
-    if(s1[n-1] == s2[m-1])
+    if(s1[n-1] == s2[m-1]){
         return 1 + Recrse(s1,s2,n-1,m-1);
-    
+    }
     return max(Recrse(s1,s2,n-1,m) , Recrse(s1,s2,n,m-1));
 }
 

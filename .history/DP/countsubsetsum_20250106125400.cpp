@@ -44,7 +44,7 @@ int main() {
     int arr[] = {1, 2, 3, 4, 5};
     int n = 5;
     int tar = 6;
-    vector<vector<int>> dp(n+1,vector<int>(tar+1,-1));
+
     // Recursive version
     cout << "Number of ways (Recursive): " << Recrse(arr, tar, n) << endl;
 
